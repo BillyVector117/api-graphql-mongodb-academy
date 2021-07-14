@@ -4,10 +4,8 @@
   "description": "API GraphQL Online Academy",
   "main": "build/server",
   "scripts": {
-    "start": "node build/server.js",
-    "build": "tsc -p . && ncp src/graphql/schema build/graphql/schema",
-    "start:dev": "npm run build:dev",
-    "build:dev": "nodemon \"src/server.ts\" --exec \"ts-node\" src/server.ts -e ts,json,graphql"
+    "start": "npm run build:dev",
+    "build": "nodemon \"src/server.ts\" --exec \"ts-node\" src/server.ts -e ts,json,graphql"
   },
   "keywords": [
     "graphql"
