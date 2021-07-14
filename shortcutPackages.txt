@@ -15,3 +15,5 @@ npm install typescript graphql-tools graphql-playground-middleware-express apoll
 Development Dependencies:
 npm install -D @types/compression @types/express @types/cors @types/lodash @types/node
 npm i -D @types/graphql
+
+note: Copy database.js file to root build directory after "build" command
