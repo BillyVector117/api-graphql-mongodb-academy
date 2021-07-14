@@ -30,19 +30,13 @@ const Mutation = {
         }
     },
     modifyCourse: async (_, { course }) => {
-        console.log(course.id);
+        console.log("Updating: ", course.id);
         let isExistingCourse = await Course_1.default.findById(course.id);
         if (isExistingCourse) {
-            console.log("editing course: ");
             const reviews = isExistingCourse.reviews;
-            console.log(reviews);
-            console.log(typeof reviews, reviews.length);
             const newReviews = course.reviews;
-            console.log(typeof newReviews, newReviews.length);
             const newArrayReviews = reviews.concat(newReviews);
-            console.log(typeof newArrayReviews, newArrayReviews.length);
             course.reviews = newArrayReviews;
-            console.log(course);
             await Course_1.default.findByIdAndUpdate(course.id, course);
         }
         else {
