@@ -25,6 +25,7 @@
     "graphql-tools": "^7.0.5",
     "http": "0.0.1-security",
     "lodash": "^4.17.21",
+    "mongodb": "^4.0.0",
     "mongoose": "^5.13.2",
     "mongoose-autopopulate": "^0.14.0",
     "ncp": "^2.0.0",
