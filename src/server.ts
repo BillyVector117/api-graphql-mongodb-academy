@@ -24,5 +24,5 @@ const httpServer = createServer(app)
 const PORT = 3000;
 
 httpServer.listen({
-    port: PORT
+    port: process.env.PORT || PORT
 }, () => console.log(`Academy server on port: http://localhost:${PORT}`))

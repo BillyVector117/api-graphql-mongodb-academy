@@ -70,8 +70,8 @@
     "skipLibCheck": true,                           /* Skip type checking of declaration files. */
     "forceConsistentCasingInFileNames": true        /* Disallow inconsistently-cased references to the same file. */
   },
-   "include": ["**/*"],
-   "exclude": ["build"],
+  "include": ["server.ts", "src/**/*.ts", "knexfile.ts"],
+	"exclude": ["node_modules", "dist", "__tests__"]
    
  
 }
