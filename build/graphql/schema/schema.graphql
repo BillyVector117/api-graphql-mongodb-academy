@@ -1,0 +1,79 @@
+type Query {
+    """ Get all students list """
+    students: [Student!]!
+    """ Get ONE student (Selected by ID)"""
+    student(id: ID!): Student!
+     """ Get ALL courses"""
+    courses: [Course!]!
+       """ Get ONE course (Selected by ID)"""
+    course(id: ID!): Course!
+}
+type Mutation {
+    newCourse(course: InputCourse!) : Course
+    modifyCourse(course: InputCourse!) : Course!
+    deleteCourse(id: ID!): Course!
+}
+input InputCourse {
+    id: ID
+    title: String!
+    description: String!
+    clases: Int!
+    time: Float!
+    logo: String!
+    level: Level=ALL
+    path: String!
+    teacher: String! 
+    students: [StudentUpdated]
+    reviews: [ReviewUpdate]
+}
+    
+""" Student properties """
+type Student {
+    id: ID!
+    name: String!
+    email: String!
+    website: String
+    courses: [Course!]!
+}
+""" Input type for Mutation Student """
+input StudentUpdated {
+    id: ID
+    name: String
+    email: String
+    website: String
+    courses: [String]
+}
+
+type Course {
+    id: ID!
+    title: String!
+    description: String!
+    clases: Int!
+    time: Float!
+    logo: String!
+    level: Level!
+    path: String!
+    teacher: String!
+    students: [Student]
+    reviews: [Review!]
+}
+
+enum Level {
+    ALL
+    BEGINNER
+    MEDIUM
+    EXPERT
+}
+type Review {
+    id: ID!
+    name: String!
+    points: Float!
+    comment: String!
+}
+""" Input type for Mutations """
+input ReviewUpdate {
+    id: ID
+    name: String
+    points: Float
+    comment: String
+}
