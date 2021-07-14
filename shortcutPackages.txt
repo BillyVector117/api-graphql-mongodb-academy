@@ -1,0 +1,17 @@
+Dependencies used in this project:
+● express
+● apollo-server-express
+● lodash
+● graphql
+● graphql-import-node
+● compression
+● cors
+● typescript
+● graphql-tools
+● graphql-playground-middleware-express
+Production Dependencies:
+npm install express graphql ncp http graphql-import-node compression cors lodash
+npm install typescript graphql-tools graphql-playground-middleware-express apollo-server-express
+Development Dependencies:
+npm install -D @types/compression @types/express @types/cors @types/lodash @types/node
+npm i -D @types/graphql

@@ -5,7 +5,7 @@
         "email": "Sincere@april.biz",
         "website": "hildegard.org",
         "courses": [
-            "1", "2"
+           "1", "2"
         ]
     },
     {
@@ -14,8 +14,8 @@
         "email": "Shanna@melissa.tv",
         "website": "anastasia.net",
         "courses": [
-            "2", "4"
-        ]
+          "2", "4"
+       ]
     },
     {
         "id": "3",
@@ -23,8 +23,8 @@
         "email": "Nathan@yesenia.net",
         "website": "ramiro.info",
         "courses": [
-            "1", "2", "3"
-        ]
+          "1", "2", "3"
+       ]
     },
     {
         "id": "4",
@@ -32,22 +32,22 @@
         "email": "Julianne.OConner@kory.org",
         "website": "kale.biz",
         "courses": [
-            "1", "2", "4"
-        ]
+          "1", "2", "4"
+       ]
     },
     {
         "id": "5",
         "name": "Chelsey Dietrich",
         "email": "Lucio_Hettinger@annie.ca",
         "website": "demarco.info",
-        "courses": []
+        "courses": [ ]
     },
     {
         "id": "6",
         "name": "Mrs. Dennis Schulist",
         "email": "Karley_Dach@jasper.info",
         "website": "ola.org",
-        "courses": ["2"]
+        "courses": [ "2" ]
     },
     {
         "id": "7",
@@ -55,8 +55,8 @@
         "email": "Telly.Hoeger@billy.biz",
         "website": "elvis.io",
         "courses": [
-            "1", "2", "3", "4"
-        ]
+          "1", "2", "3", "4"
+       ]
     },
     {
         "id": "8",
@@ -64,8 +64,8 @@
         "email": "Sherwood@rosamond.me",
         "website": "jacynthe.com",
         "courses": [
-            "1"
-        ]
+          "1"
+       ]
     },
     {
         "id": "9",
@@ -73,8 +73,8 @@
         "email": "Chaim_McDermott@dana.io",
         "website": "conrad.com",
         "courses": [
-            "2"
-        ]
+          "2"
+       ]
     },
     {
         "id": "10",
@@ -83,4 +83,4 @@
         "website": "ambrose.net",
         "courses": []
     }
-]
+ ]

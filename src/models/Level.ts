@@ -1,7 +1,7 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const mongoose_1 = require("mongoose");
-const LevelSchema = new mongoose_1.Schema({
+// mongoose section
+import { Schema, model } from 'mongoose';
+// Model Schema for Messages
+const LevelSchema: any = new Schema({
     ALL: {
         type: String,
         default: "ALL",
@@ -22,5 +22,6 @@ const LevelSchema = new mongoose_1.Schema({
         default: "EXPERT",
         required: true
     },
-});
-exports.default = mongoose_1.model('Level', LevelSchema);
+
+})
+export default model('Level', LevelSchema)

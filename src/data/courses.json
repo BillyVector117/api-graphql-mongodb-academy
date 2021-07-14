@@ -72,7 +72,7 @@
         "logo": "https://i.udemycdn.com/course/240x135/2306140_8181.jpg",
         "path": "/flutter-ios-android-fernando-herrera",
         "teacher": "Fernando Herrera",
-        "reviews": [
+        "reviews":[
             {
                 "id": "1",
                 "name": "Christian",

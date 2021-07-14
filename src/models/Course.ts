@@ -1,7 +1,10 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const mongoose_1 = require("mongoose");
-const CourseSchema = new mongoose_1.Schema({
+// mongoose section
+import { Schema, model } from 'mongoose';
+import Level from './Level';
+import Review from './Review';
+import Student from './Student';
+// Model Schema for Messages
+const CourseSchema: any = new Schema({
     title: {
         type: String,
         required: true
@@ -24,12 +27,13 @@ const CourseSchema = new mongoose_1.Schema({
     },
     level: {
         type: String,
-        enum: [
-            "ALL",
-            "BEGINNER",
-            "MEDIUM",
-            "EXPERT"
-        ],
+        enum:
+            [
+                "ALL",
+                "BEGINNER",
+                "MEDIUM",
+                "EXPERT"
+            ],
         required: true,
         autopopulate: true,
     },
@@ -42,12 +46,15 @@ const CourseSchema = new mongoose_1.Schema({
         required: true
     },
     students: {
-        type: Object,
+        type: Object, // Reference to Student model
         autopopulate: true,
     },
     reviews: {
+        // type: [{ type: Schema.Types.ObjectId, ref: Review }], // Reference to review model
         type: Object,
         autopopulate: true,
     },
-});
-exports.default = mongoose_1.model('Course', CourseSchema);
+
+
+})
+export default model('Course', CourseSchema)
